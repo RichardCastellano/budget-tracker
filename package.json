@@ -1,0 +1,19 @@
+{
+  "name": "budget-tracker",
+  "version": "1.0.0",
+  "description": "Trackers your expenses so you don't over spend and helps you create a budget plan so you are able to save money for the future.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardCastellano/budget-tracker.git"
+  },
+  "author": "RichyRich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardCastellano/budget-tracker/issues"
+  },
+  "homepage": "https://github.com/RichardCastellano/budget-tracker#readme"
+}
