@@ -7,6 +7,11 @@ class Month {
     return this.categories.find((cat) => cat.name === categoryName);
   }
 
+  getItemsInACategory(categoryName) {
+    const category = this.getCategory(categoryName);
+    return category.items;
+  }
+
   addCategory(categoryName) {
     const category = {
       name: categoryName,
@@ -23,10 +28,4 @@ class Month {
     const category = this.getCategory(categoryName);
     category.items.push(item);
   }
-
-  getItemsInACategory(categoryName) {
-    const category = this.getCategory(categoryName);
-    return category.items
-  }
 }
-
