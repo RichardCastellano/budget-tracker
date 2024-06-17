@@ -50,13 +50,14 @@ class Month {
     const category = this.getCategory(categoryName)
     category.items = []
   }
+
+  updateAmountValue(categoryName, itemName, newAmount) {
+    const item = this.getSpecficItemInACategory(categoryName, itemName)
+    item.amount = newAmount
+  }
 }
 
 
-
-
-
-
-
-// add a way to update value of amounts
 // handle errors like check for duplicates on categories and items
+
+
