@@ -32,9 +32,37 @@ class Month {
     const category = this.getCategory(categoryName);
     category.items.push(item);
   }
+
+  deleteCategory(categoryName) {
+    this.categories = this.categories.filter(cat => cat.name !== categoryName)
+  }
+  
+  deleteItemInCategory(categoryName, itemName) {
+    const category = this.getCategory(categoryName)
+    category.items = this.getItemsInACategory(categoryName).filter(item => item.name !== itemName)
+  }
+
+  deletAllCategories() {
+    this.categories = []
+  }
+  
+  deleteAllItemsInACategory(categoryName) {
+    const category = this.getCategory(categoryName)
+    category.items = []
+  }
 }
 
 
-// add a way to remove categories and items 
+
+const june = new Month()
+june.addCategory('housing')
+june.addCategory('savings')
+june.addItemToCategory('savings', 'disneylandtrip')
+june.addItemToCategory('savings', 'roth ira')
+june.deleteAllItemsInACategory('savings')
+console.log(june)
+
+
+
 // add a way to update value of amounts
 // handle errors like check for duplicates on categories and items
