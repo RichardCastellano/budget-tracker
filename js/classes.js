@@ -12,12 +12,16 @@ class Month {
     return category.items;
   }
 
+  getSpecficItemInACategory(categoryName, itemName) {
+     return this.getCategory(categoryName).items.find(item => item.name === itemName)
+  }
+
   addCategory(categoryName) {
     const category = {
       name: categoryName,
-      items: [],
-    };
-    this.categories.push(category);
+      items: []
+    }
+    this.categories.push(category)
   }
 
   addItemToCategory(categoryName, itemName) {
@@ -29,3 +33,8 @@ class Month {
     category.items.push(item);
   }
 }
+
+
+// add a way to remove categories and items 
+// add a way to update value of amounts
+// handle errors like check for duplicates on categories and items
