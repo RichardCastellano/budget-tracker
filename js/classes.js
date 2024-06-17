@@ -54,13 +54,7 @@ class Month {
 
 
 
-const june = new Month()
-june.addCategory('housing')
-june.addCategory('savings')
-june.addItemToCategory('savings', 'disneylandtrip')
-june.addItemToCategory('savings', 'roth ira')
-june.deleteAllItemsInACategory('savings')
-console.log(june)
+
 
 
 
