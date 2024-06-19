@@ -1,4 +1,4 @@
-class Month {
+export class Month {
   constructor() {
     this.categories = [
       {
@@ -116,5 +116,5 @@ class Month {
 }
 
 // handle errors like check for duplicates on categories and items
-let june = new Month();
-console.log(june);
+
+
