@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Trackers your expenses so you don't over spend and helps you create a budget plan so you are able to save money for the future.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
