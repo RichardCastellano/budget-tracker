@@ -1,10 +1,11 @@
 import { initializeDropdown } from "./components/dropdown.js";
 import { userInput, postTemplate } from "./components/BudgetTemplate.js";
-import { startingBudgetTemplate } from "./utils/constants.js";
+import { createCategory } from "./utils/functions.js";
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  initializeDropdown();
-  userInput()
-  postTemplate()
+  
+
+  createCategory()
 });
 
