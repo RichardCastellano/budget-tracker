@@ -1,4 +1,4 @@
-import { createCategorySection, createItemLine } from "./utils/functions.js";
+import { createCategorySection, createItemLine } from "./utils/btn-functions.js";
 import { nextBtnPressed, previousBtnPressed, getCurrentMonth} from "./components/Months-scroll-btn.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Next and previous button pressing functionality 
     getCurrentMonth()
-    nextBtn.addEventListener('click', () => {nextBtnPressed()})
-    previousBtn.addEventListener('click', () => {previousBtnPressed()})
+    nextBtn.addEventListener('click', nextBtnPressed)
+    previousBtn.addEventListener('click', previousBtnPressed)
     
 });
 
