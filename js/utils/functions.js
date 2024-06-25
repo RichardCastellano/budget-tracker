@@ -1,12 +1,12 @@
-const createItemLine = () => {
+export const createItemLine = () => {
     const itemInfo = document.createElement('div');
     const itemName = document.createElement('input');
     const itemAmount = document.createElement('input');
     itemInfo.setAttribute('class', 'item-info');
     itemName.setAttribute('class', 'item');
     itemAmount.setAttribute('class', 'amount');
-    itemInfo.append(itemName);
-    itemInfo.append(itemAmount);
+    itemInfo.appendChild(itemName);
+    itemInfo.appendChild(itemAmount);
     return itemInfo;
 }
 
@@ -21,9 +21,12 @@ export const createCategorySection = () => {
     const categoryInfo = document.createElement('div');
     const categoryName = document.createElement('input');
     const addItemBtn = createAddItemBtn();
-    categoryInfo.append(categoryName);
-    categoryInfo.append(addItemBtn);
+    categoryInfo.setAttribute('class', 'category-info')
+    categoryInfo.appendChild(categoryName);
+    categoryInfo.appendChild(addItemBtn);
     return categoryInfo;
 }
+
+
 
 
