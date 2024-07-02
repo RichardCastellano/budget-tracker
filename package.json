@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RichardCastellano/budget-tracker/issues"
   },
-  "homepage": "https://github.com/RichardCastellano/budget-tracker#readme"
+  "homepage": "https://github.com/RichardCastellano/budget-tracker#readme",
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
 }
