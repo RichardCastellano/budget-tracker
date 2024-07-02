@@ -2,16 +2,20 @@ import { createCategorySection, createItemLine } from "./utils/btn-functions.js"
 import { nextBtnPressed, previousBtnPressed, getCurrentMonth} from "./components/Months-scroll-btn.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    // DOM constants
     const addGroupBtn = document.getElementById('add-group-btn');
-    const body = document.getElementById('body');
+    const budgetPlanning = document.getElementById('budget-planning');
     const nextBtn = document.getElementById('next-btn');
     const previousBtn = document.getElementById('previous-btn')
     
+    // Add group btn functionality 
     addGroupBtn.addEventListener('click', () => {
         const categorySection = createCategorySection();
-        body.insertBefore(categorySection, addGroupBtn);
+        budgetPlanning.insertBefore(categorySection, addGroupBtn);
     });
     
+    // Add item btn functionality
     document.addEventListener('click', (event) => {
         if (event.target.classList.contains('add-item-btn')) {
             const itemLine = createItemLine();
